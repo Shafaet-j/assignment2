@@ -86,13 +86,15 @@ nav {
 
 /* Feature section styles start here  */
 .feature {
-  margin: 85px 230px;
+  margin: 95px 230px;
 }
 .feature-list-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 145px;
+  max-width: 1440px;
+  position: relative;
 }
 .feature-image {
   display: grid;
@@ -101,14 +103,14 @@ nav {
   grid-gap: 25px;
 }
 .feature-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 45px;
-  color: #727272;
+  color: #131313;
   margin-bottom: 30px;
 }
 .black {
-  color: #131313;
-  font-weight: 700;
+  color: #727272;
+  font-weight: 500;
   font-size: 45px;
 }
 .yellow {
@@ -122,4 +124,72 @@ nav {
   line-height: 26px;
   color: #727272;
   margin-bottom: 30px;
+}
+
+/* Enjoyable feature style start here  */
+.item {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.feature-sub {
+  font-weight: 600;
+  font-size: 20px;
+  color: #131313;
+  margin-bottom: 10px;
+}
+.gap {
+  margin-bottom: 0;
+}
+.exp {
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 46px 42px;
+  position: absolute;
+  z-index: 999;
+  bottom: -60px;
+  margin-left: 120px;
+}
+.title-exp {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 70px;
+  color: #ffffff;
+}
+.exp p {
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+/* Facts section styles start here  */
+.facts-container {
+}
+.awards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.award-title {
+  font-weight: 600;
+  font-size: 45px;
+  color: #424242;
+}
+.award-des {
+  font-weight: 600;
+  font-size: 20px;
+  color: #727272;
+}
+.award {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  padding: 40px 35px;
+}
+.award:hover {
+  scale: 1.1;
+  rotate: 5deg;
+  transition: 1.4s;
 }
