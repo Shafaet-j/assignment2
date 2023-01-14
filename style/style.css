@@ -163,10 +163,23 @@ nav {
   font-size: 25px;
   color: #ffffff;
 }
+.border {
+  position: relative;
+  margin-left: 15px;
+}
+.border::before {
+  content: "";
+  background-color: #ff900e;
+  display: block;
+  width: 6px;
+  height: 106px;
+  left: -20px;
+  top: 5px;
+  position: absolute;
+  margin-right: 10px;
+}
 
 /* Facts section styles start here  */
-.facts-container {
-}
 .awards-container {
   display: flex;
   justify-content: space-around;
@@ -192,4 +205,123 @@ nav {
   scale: 1.1;
   rotate: 5deg;
   transition: 1.4s;
+}
+
+/* sponsor section style start here  */
+.sponsor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sponsor-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+/* contact section style start here  */
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06); */
+  border-radius: 8px;
+  margin: 30px 0;
+}
+form {
+  padding: 30px 60px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+input[type="submit"] {
+  background-color: #ff900e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* footer section style start here  */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff4e7;
+  border-radius: 8px;
+  padding: 40px 400px;
+}
+
+/* Responsive style start here  */
+@media screen and (max-width: 668px) {
+  .nav-container {
+    padding: 10px 20px;
+  }
+  .nav-link {
+    flex-direction: column;
+  }
+  .hero-img {
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+  }
+  .hero-des {
+    width: 100%;
+  }
+  .logo h5 {
+    font-size: 24px;
+  }
+  .feature {
+    margin: 30px 40px;
+  }
+  .feature-list-container {
+    flex-direction: column;
+  }
+  .feature-title {
+    width: 100%;
+  }
+  .feature-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-girl {
+    width: 100%;
+  }
+  .feature-list-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .awards-container,
+  .sponsor-logo {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .awards-container {
+    margin-top: 0;
+  }
+  .footer-container {
+    padding: 20px 20px;
+  }
+  .exp {
+    margin-left: 0px;
+    display: none;
+  }
+  form {
+    padding: 30px 0px;
+  }
 }
